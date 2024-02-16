@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: rgb(67, 5, 5);
+        }
+
+        p {
+            line-height: 1.6;
+            color: rgb(43, 215, 24);
+        }
+    </style>
+</head>
+<body>
+    <h1>Difference between HTTP1.1 vs HTTP2</h1>
+    <p>HTTP/1.1 and HTTP/2 are versions of the Hypertext Transfer Protocol (HTTP) that are used for communication on the World Wide Web. Here are some key differences between them:</p>
+
+    <h2>1. Multiplexing</h2>
+    <p>HTTP/1.1: Uses a single connection per request, leading to potential head-of-line blocking issues.</p>
+    <p>HTTP/2: Introduces multiplexing, allowing multiple requests and responses to be sent and received in parallel over a single connection, improving performance.</p>
+
+    <h2>2. Binary Protocol</h2>
+    <p>HTTP/1.1: Text-based protocol, which can be less efficient in terms of parsing and transmission.</p>
+    <p>HTTP/2: Binary protocol, which reduces overhead and is more efficient for both the client and server.</p>
+
+    <h2>3. Header Compression</h2>
+    <p>HTTP/1.1: Headers are sent in plaintext, leading to higher overhead.</p>
+    <p>HTTP/2: Utilizes header compression, reducing the amount of data sent over the network and improving performance.</p>
+
+    <h2>Conclusion</h2>
+    <p>While HTTP/1.1 has been widely used, HTTP/2 introduces several improvements that enhance web performance. The choice between them depends on factors such as server and client support, as well as specific use cases.</p>
+
+
+</body>
+</html>
